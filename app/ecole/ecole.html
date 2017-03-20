@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Liste des ecoles</title>
+</head>
+<body ng-controller="EcoleCtrl">
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">WebApp</a>
+			</div>
+				<ul class="nav navbar-nav">
+					<li><a href="#/welcome">Home</a></li>
+					<li class="active"><a href="#/ecole">Ecole</a></li>
+					<li><a href="#">Logout</a></li>
+				</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<form role="form" name="ecoleForm">
+			<legend>Detail de la liste des ecoles</legend>
+
+
+			<div class="row">
+				<label class="col-md-2">Choix de l'école</label>
+				<div class="form-group col-md-6 col-offset-4" >
+					<select ng-options="item as item.name for item in ecole" class="form-control" ng-model="selected"></select>
+				</div>
+			</div>
+			<br/>
+				<div class="row">
+					<div class="col-md-2">
+						<label for="code">Code</label>
+						<input type="text" name="code" class="form-control" ng-model="selected.code" />
+					</div>
+					<div class="col-md-1">
+						<label for="id">Tag Id</label>
+						<input type="text" name="id" class="form-control" ng-model="selected.id" />
+					</div>
+					<div class="col-md-5">
+						<label for="name">Nom de l'école *</label>
+						<input type="text" name="name" class="form-control" ng-model="selected.name" />
+					</div>
+					<div class="col-md-2">
+						<label for="phone">Téléphone *</label>
+						<input type="text" name="phone" class="form-control" ng-model="selected.phone" />
+					</div>
+					<div class="col-md-2">
+						<label for="fax">Fax</label>
+						<input type="text" name="fax" class="form-control" ng-model="selected.fax" />
+					</div>
+				</div>
+				<br/>
+				<div class="row">
+					<div class="col-md-4">
+						<label for="website">Website *</label>
+						<input type="text" name="website" class="form-control" ng-model="selected.website" />
+					</div>
+					<div class="col-md-4">
+						<label for="email">Adresse mail de l'école *</label>
+						<input type="text" name="email" class="form-control" ng-model="selected.email" />
+					</div>
+					<div class="col-md-4">
+						<label for="urlBlog">Blog</label>
+						<input type="text" name="urlBlog" class="form-control" ng-model="selected.urlBlog" />
+					</div>
+				</div>
+		</form>
+	</div>
+
+
+</body>
+</html>

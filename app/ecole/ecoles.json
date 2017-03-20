@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "code": "COMNICIA",
+    "name": "Comnicia - Votre Business School en ligne",
+    "website": "www.comnicia.com.dev",
+    "phone": "0174888888",
+    "fax": "",
+    "email": "contact@comnicia.com",
+    "urlBlog": "https://blog.studi.fr/category/comnicia/"
+  },
+  {
+    "id": 2,
+    "code": "COMPTALIA",
+    "name": "Comptalia - Formations à distance depuis 1999",
+    "website": "www.comptalia.com",
+    "phone": "0174888000",
+    "fax": null,
+    "email": "contact@comptalia.com",
+    "urlBlog": null
+  }
+]
